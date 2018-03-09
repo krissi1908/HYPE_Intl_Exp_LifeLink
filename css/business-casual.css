@@ -1,6 +1,47 @@
+/* Three columns side by side */
+.column2 {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    
+}
+
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container2 {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.container2::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: teal;
+}
+
+.column3 {
+    float: left;
+    width: 50%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    ;
+}
+
+
+
 body {
   font-family: 'Lora';
-  /*background: linear-gradient(rgba(0,128,128, 0.65), rgba(173,255,47,0.65)), url('pineapple.jpg'); */
+  background: linear-gradient(rgba(0,128,128, 0.65), rgba(173,255,47,0.65)), url('pineapple.jpg'); 
   background-image: url('pineapple.jpg');
   background-attachment: fixed;
   background-position: center;
@@ -39,9 +80,16 @@ p {
 }
 
 .site-heading .site-heading-lower {
-  font-size: 5rem;
+  font-size: 2rem;
   font-weight: 100;
   line-height: 4rem;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
 }
 
 .page-section {
@@ -69,13 +117,19 @@ p {
   background-color: rgba(255, 255, 255, 0.85);
 }
 
+
+
+
+
+
 #mainNav {
-  background-color: rgba(47, 23, 15, 0.9);
+  background-color: rgba(0,128,128, 0.9);
   font-family: 'Raleway';
+  margin: auto;
 }
 
 #mainNav .navbar-brand {
-  color: #e6a756;
+  color: yellow;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -84,18 +138,19 @@ p {
 }
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
-  color: #e6a756;
+  color: yellow;
 }
 
 @media (min-width: 992px) {
   #mainNav .navbar-nav .nav-item .nav-link {
-    font-size: 0.9rem;
+    font-size: 15px;
+    
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: rgba(255, 255, 255, 0.4);
   }
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
-    color: #e6a756;
+    color: rgba(255, 255, 255, 0.4);
   }
 }
 
@@ -161,15 +216,19 @@ p {
   border: 0.25rem solid rgba(255, 255, 255, 0.85);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1500px) {
   .about-heading .about-heading-img {
     position: relative;
     z-index: 0;
+    margin-bottom: 20px;
+    padding: 30px 15px;
   }
   .about-heading .about-heading-content {
     margin-top: -5rem;
     position: relative;
     z-index: 1;
+    margin-bottom: 20px;
+    padding: 30px 15px;
   }
 }
 
